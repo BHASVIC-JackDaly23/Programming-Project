@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f53d4d56-2521-430e-9a49-9f152ad7b404" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Algorithm/Algorithm for predicted points/Test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/Algorithm for predicted points/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Algorithm for predicted points/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/Algorithm for predicted points/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Algorithm for predicted points/Test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +45,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -73,6 +72,8 @@
       <updated>1729760224123</updated>
       <workItem from="1729760225646" duration="1525000" />
       <workItem from="1730206586146" duration="2312000" />
+      <workItem from="1730292538420" duration="71000" />
+      <workItem from="1730292620766" duration="3427000" />
     </task>
     <servers />
   </component>
@@ -80,6 +81,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Programming_Project$Test.coverage" NAME="Test Coverage Results" MODIFIED="1730207681438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm/Algorithm for predicted points" />
+    <SUITE FILE_PATH="coverage/Programming_Project$Test.coverage" NAME="Test Coverage Results" MODIFIED="1730315459071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm/Algorithm for predicted points" />
   </component>
 </project>
