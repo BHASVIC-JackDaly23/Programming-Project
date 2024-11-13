@@ -7,16 +7,6 @@ def attackerPredictedPoints(xG, xA, mp, ha, fdr ):
     totalPoints = (xG_points + xA_points) * (mp/90) * ha * fdr
 
 
-
-
-    print(totalPoints)
-
-
-
-
-attackerPredictedPoints(0.46, 0.89, 570, 0.8, 0.5  )
-
-
 def defenderPredictedPoints(xG, xA, xCleansheets, mp, ha, fdr ):
     xG_points = xG * 4
     xA_points = xA * 3
@@ -24,10 +14,6 @@ def defenderPredictedPoints(xG, xA, xCleansheets, mp, ha, fdr ):
 
     totalPoints = (xG_points + xA_points + xCS_points) * (mp / 90) * ha * fdr
 
-    print(totalPoints)
-
-
-defenderPredictedPoints(0,0.12 , 0.38, 660, 0.8, 0.5 )
 
 
 def goalkeeperPredictedPoints(xG, xA,xCleansheets, xSaves, mp, ha, fdr ):
@@ -37,7 +23,7 @@ def goalkeeperPredictedPoints(xG, xA,xCleansheets, xSaves, mp, ha, fdr ):
     xS_points = xSaves * 1
     totalPoints = (xG_points + xA_points + xCS_points) * (mp / 90) * ha * fdr
 
-    print(totalPoints)
+
 
 
 
