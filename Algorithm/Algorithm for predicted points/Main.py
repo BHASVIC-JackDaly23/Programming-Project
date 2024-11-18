@@ -35,7 +35,12 @@ def goalkeeperPredictedPoints(xG, xA,xCleansheets, xSaves, mp, ha, fdr ):
     xS_points = xSaves * 1
     totalPoints = (xG_points + xA_points + xCS_points) * (mp / 90) * ha * fdr
 
+
     print(totalPoints)
+
+
+
+goalkeeperPredictedPoints(0, 0.06, 0.25, 2.12, 720, 0.8, 1 )
 
 
 
