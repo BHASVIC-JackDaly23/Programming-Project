@@ -25,24 +25,28 @@ if response.status_code == 200:
 
     if 'data' in data:
         # Print formatted response data
-            for participant in fixture['participants']:
-                print(f"    Team Name: {participant['name']}")
-                print(f"    Short Code: {participant['short_code']}")
-                print(f"    Image Path: {participant['image_path']}")
-                print(f"    Last Played At: {participant['last_played_at']}")
-                print(f"    Location: {participant['meta']['location']}")
-                print(f"    Winner: {participant['meta']['winner']}")
-                print(f"    Position: {participant['meta']['position']}")
-                print()
-            print(f"Venue:")
-            print(f"Statistics:")
-            for stat in player['statistics']:
-                print(f"    Statistic ID: {stat['id']}")
-                print(f"    Type: {stat['type']['name']}")
-                print(f"    Type ID: {stat['type_id']}")
-                print(f"    Team: {stat['location']}")
-                print(f"    Value: {stat['data']['value']}")
-                print()
-            print()
+        print("Player Statistics for Premier League Opening Week:")
+        for fixture in data.get('data', []):
+            print(f"\nFixture: {fixture['name']} (ID: {fixture['id']})")
+            print(f"Date: {fixture['starting_at']}")
+
+            # Check for player statistics
+            if 'statistics' in fixture:
+                for statistic in fixture['statistics']:
+                    if 'player' in statistic:  # Ensure player statistics exist
+                        player = statistic['player']
+                        print(f"\nPlayer Name: {player['name']} (ID: {player['id']})")
+                        print(f"    Team: {statistic['location']}")
+                        print(f"    Position: {statistic['data']['position']}")
+                        print(f"    Goals Scored: {statistic['data']['goals']}")
+                        print(f"    Assists: {statistic['data']['assists']}")
+                        print(f"    Shots: {statistic['data']['shots']}")
+                        print(f"    Pass Accuracy: {statistic['data']['pass_accuracy']}%")
+                        print(f"    Yellow Cards: {statistic['data']['yellow_cards']}")
+                        print(f"    Red Cards: {statistic['data']['red_cards']}")
+            else:
+                print("No player statistics available for this fixture.")
     else:
-        print("Failed to retrieve data. Status code:", response.status_code)
+        print("No data found in the response.")
+else:
+     print("Failed to retrieve data. Status code:", response.status_code)

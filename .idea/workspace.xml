@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f53d4d56-2521-430e-9a49-9f152ad7b404" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/Algorithm for predicted points/.idea/Test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/Algorithm for predicted points/API.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/Algorithm for predicted points/Test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Programming-Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Programming-Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/Algorithm for predicted points/API.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Algorithm for predicted points/API.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,27 +35,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.API.executor&quot;: &quot;Run&quot;,
-    &quot;Python.New stuff.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Merging main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jackr/Intellij/java/Programming-Project/Algorithm/Algorithm for predicted points&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.API.executor": "Run",
+    "Python.New stuff.executor": "Run",
+    "Python.Test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/jackr/Intellij/java/Programming-Project/Algorithm/Algorithm for predicted points",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jackr\Intellij\java\Programming-Project\Algorithm\Algorithm for predicted points" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="API" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Programming-Project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Algorithm for predicted points)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Algorithm/Algorithm for predicted points" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algorithm/Algorithm for predicted points/API.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -85,7 +107,7 @@
       <workItem from="1731494930914" duration="5193000" />
       <workItem from="1732025495861" duration="2364000" />
       <workItem from="1732200142833" duration="2175000" />
-      <workItem from="1732525742743" duration="755000" />
+      <workItem from="1732525742743" duration="2801000" />
     </task>
     <servers />
   </component>
@@ -94,7 +116,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Programming_Project$List.coverage" NAME="List Coverage Results" MODIFIED="1731921327514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm/Algorithm for predicted points" />
-    <SUITE FILE_PATH="coverage/Programming_Project$API.coverage" NAME="API Coverage Results" MODIFIED="1732201360401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm/Algorithm for predicted points" />
+    <SUITE FILE_PATH="coverage/Programming_Project$API.coverage" NAME="API Coverage Results" MODIFIED="1732527574770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm/Algorithm for predicted points" />
     <SUITE FILE_PATH="coverage/Programming_Project$Test.coverage" NAME="Test Coverage Results" MODIFIED="1732200592510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm/Algorithm for predicted points" />
     <SUITE FILE_PATH="coverage/Programming_Project$New_stuff.coverage" NAME="New stuff Coverage Results" MODIFIED="1731500569771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm/Algorithm for predicted points" />
   </component>
