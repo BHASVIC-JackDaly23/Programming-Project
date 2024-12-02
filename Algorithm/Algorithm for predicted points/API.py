@@ -7,8 +7,10 @@ api_key = "6EY6z8qgu7RrGaHwQQbJc6qdTFxC3uJmqNutFDlHBEnceoDuaWwZLsVbwEla"
 # Define the API endpoint URL
 base_url = "https://api.sportmonks.com/v3/football"
 endpoint = "/fixtures/between/2023-08-11/2023-08-17"
+
 filters = "fixtureLeagues:8"
-include = "participants;statistics.player"
+include = "statistics"
+
 endpoint_url = f"{base_url}{endpoint}?filters={filters}&include={include}"
 # Include API key in request headers
 headers = {"Authorization": api_key}
@@ -35,7 +37,7 @@ if response.status_code == 200:
                 for statistic in fixture['statistics']:
                     if 'player' in statistic:  # Ensure player statistics exist
                         player = statistic['player']
-                        print(f"\nPlayer Name: {player['name']} (ID: {player['id']})")
+                        print(f"\nPlayer Name: {  ]} (ID: {player['id']})")
                         print(f"    Team: {statistic['location']}")
                         print(f"    Position: {statistic['data']['position']}")
                         print(f"    Goals Scored: {statistic['data']['goals']}")
