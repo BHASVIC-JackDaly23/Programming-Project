@@ -7,6 +7,7 @@
     <list default="true" id="f53d4d56-2521-430e-9a49-9f152ad7b404" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Algorithm/Algorithm for predicted points/API.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Algorithm for predicted points/API.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/Algorithm for predicted points/List.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Algorithm for predicted points/List.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +67,6 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.8" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Algorithm/Algorithm for predicted points" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -108,6 +108,7 @@
       <workItem from="1732200142833" duration="2175000" />
       <workItem from="1732525742743" duration="2817000" />
       <workItem from="1733128631918" duration="3634000" />
+      <workItem from="1733733665297" duration="3426000" />
     </task>
     <servers />
   </component>
@@ -115,9 +116,9 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Programming_Project$New_stuff.coverage" NAME="New stuff Coverage Results" MODIFIED="1731500569771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm/Algorithm for predicted points" />
     <SUITE FILE_PATH="coverage/Programming_Project$List.coverage" NAME="List Coverage Results" MODIFIED="1731921327514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm/Algorithm for predicted points" />
+    <SUITE FILE_PATH="coverage/Programming_Project$API.coverage" NAME="API Coverage Results" MODIFIED="1733735668895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm/Algorithm for predicted points" />
     <SUITE FILE_PATH="coverage/Programming_Project$Test.coverage" NAME="Test Coverage Results" MODIFIED="1732200592510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm/Algorithm for predicted points" />
-    <SUITE FILE_PATH="coverage/Programming_Project$API.coverage" NAME="API Coverage Results" MODIFIED="1733417314115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm/Algorithm for predicted points" />
+    <SUITE FILE_PATH="coverage/Programming_Project$New_stuff.coverage" NAME="New stuff Coverage Results" MODIFIED="1731500569771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm/Algorithm for predicted points" />
   </component>
 </project>

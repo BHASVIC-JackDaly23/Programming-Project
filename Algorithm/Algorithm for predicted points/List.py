@@ -9,8 +9,8 @@ import json
 api_key = "Pg6RHBcK6V71HKUaYi2YUFJcgYjI663H0Pfpy3Meb6q4YdKNVyQ5Bd4B5otv"
 # Define the API endpoint URL
 base_url = "https://api.sportmonks.com/v3/football"
-endpoint = "/leagues"
-include = "country"
+endpoint = "leagues"
+include = "players"
 endpoint_url = f"{base_url}{endpoint}?include={include}"
 # Include API key in request headers
 headers = {"Authorization": api_key}
