@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f53d4d56-2521-430e-9a49-9f152ad7b404" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Algorithm/Algorithm for predicted points/API Call.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Programming-Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Programming-Project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
+=======
+      <change beforePath="$PROJECT_DIR$/Algorithm/Algorithm for predicted points/API.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Algorithm for predicted points/API.py" afterDir="false" />
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/Algorithm/Algorithm for predicted points/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Algorithm for predicted points/Main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +43,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Python.API.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Football(1).executor&quot;: &quot;Run&quot;,
     &quot;Python.New stuff.executor&quot;: &quot;Run&quot;,
     &quot;Python.Test.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -56,7 +63,7 @@
       <recent name="C:\Users\jackr\Intellij\java\Programming-Project\Algorithm\Algorithm for predicted points" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.Football(1)">
     <configuration name="API" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Programming-Project" />
       <option name="ENV_FILES" value="" />
@@ -66,6 +73,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.8" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Algorithm/Algorithm for predicted points" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -80,12 +88,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Football(1)" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Programming-Project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.8" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/Football(1).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.18034.82" />
-        <option value="bundled-python-sdk-975db3bf15a3-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.18034.82" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
+        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
       </set>
     </attachedChunks>
   </component>
@@ -107,7 +139,17 @@
       <workItem from="1732200142833" duration="2175000" />
       <workItem from="1732525742743" duration="2817000" />
       <workItem from="1733128631918" duration="3634000" />
-      <workItem from="1733733665297" duration="3426000" />
+      <workItem from="1733490443082" duration="2949000" />
+      <workItem from="1733935455906" duration="61000" />
+      <workItem from="1733935522862" duration="4786000" />
+      <workItem from="1734004101189" duration="1368000" />
+      <workItem from="1734082431375" duration="4029000" />
+      <workItem from="1735404657592" duration="3179000" />
+      <workItem from="1735480465762" duration="1509000" />
+      <workItem from="1735494953640" duration="930000" />
+      <workItem from="1735567783934" duration="3776000" />
+      <workItem from="1735817625771" duration="1952000" />
+      <workItem from="1735999352651" duration="3597000" />
     </task>
     <servers />
   </component>
@@ -115,9 +157,10 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Programming_Project$List.coverage" NAME="List Coverage Results" MODIFIED="1731921327514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm/Algorithm for predicted points" />
-    <SUITE FILE_PATH="coverage/Programming_Project$API.coverage" NAME="API Coverage Results" MODIFIED="1733735668895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm/Algorithm for predicted points" />
-    <SUITE FILE_PATH="coverage/Programming_Project$Test.coverage" NAME="Test Coverage Results" MODIFIED="1732200592510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm/Algorithm for predicted points" />
     <SUITE FILE_PATH="coverage/Programming_Project$New_stuff.coverage" NAME="New stuff Coverage Results" MODIFIED="1731500569771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm/Algorithm for predicted points" />
+    <SUITE FILE_PATH="coverage/Programming_Project$List.coverage" NAME="List Coverage Results" MODIFIED="1731921327514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm/Algorithm for predicted points" />
+    <SUITE FILE_PATH="coverage/Programming_Project$Test.coverage" NAME="Test Coverage Results" MODIFIED="1732200592510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm/Algorithm for predicted points" />
+    <SUITE FILE_PATH="coverage/Programming_Project$Football_1_.coverage" NAME="Football(1) Coverage Results" MODIFIED="1735999914382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
+    <SUITE FILE_PATH="coverage/Programming_Project$API.coverage" NAME="API Coverage Results" MODIFIED="1735494036636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorithm/Algorithm for predicted points" />
   </component>
 </project>
