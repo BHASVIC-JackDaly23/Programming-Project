@@ -35,6 +35,8 @@ if response.status_code == 200:
 
         TeamNamePrinted = 0
 
+        playerList = []
+
         print("Player Statistics for Premier League Opening Week:")
         for fixture in data.get('data', []):
             print(f"\nFixture: {fixture['name']} (ID: {fixture['id']})")
@@ -52,14 +54,18 @@ if response.status_code == 200:
                 for playerstat in lineup.get('details', []):
                     if playerstat['type_id'] == 118:
                         if TeamNamePrinted == 0:  # first time name been printed
-                            print(f"{teamnamedata['data']['name']}")
+                            #print(f"{teamnamedata['data']['name']}")
                             TeamNamePrinted = teamnamedata['data']['id']
 
-                        print(f"Player:{lineup['jersey_number']} {lineup['player']['display_name']} {lineup['player']['image_path']}")
-                        print(f"Player Rating : {playerstat['data']['value']}")
 
-                        playerList[x] = (f"Player:{lineup['jersey_number']} {lineup['player']['display_name']} {lineup['player']['image_path']}Player Rating : {playerstat['data']['value']}")
-                        playerList[x] = playerList[x+1]
+
+                        #print(f"Player:{lineup['jersey_number']} {lineup['player']['display_name']} {lineup['player']['image_path']}")
+                        #print(f"Player Rating : {playerstat['data']['value']}")
+
+                        playerInfo = f"Player:{lineup['player']['display_name']} Player Rating : {playerstat['data']['value']}"
+                        playerList.append(playerInfo)
+
+
 
 
 
@@ -68,5 +74,16 @@ if response.status_code == 200:
 else:
     print("Failed to retrieve data. Status code:", response.status_code)
 
-playerdata = pd.DataFrame(playerList[x])
+playerdata = pd.DataFrame(playerList)
+playerdata = pd.read_csv('playerlist.csv', delimiter=",")
 playerdata.to_csv('playerlist.csv', index=False)
+
+#playerdata.columns = ['Player Name', 'Player Rating']
+
+#for i in range(len(playerdata) - 1):
+ #   if playerdata.iloc[i]['score'] > playerdata.iloc[i + 1]['score']:
+  #      # Swap the two rows
+   #     playerdata.iloc[i], playerdata.iloc[i + 1] = playerdata.iloc[i + 1].copy(), playerdata.iloc[i].copy()
+#print(playerdata.columns)
+
+print(playerdata.shape)
