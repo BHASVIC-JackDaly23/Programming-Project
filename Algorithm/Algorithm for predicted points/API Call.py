@@ -36,6 +36,7 @@ if response.status_code == 200:
         TeamNamePrinted = 0
 
         playerList = []
+        playerRating = []
 
         print("Player Statistics for Premier League Opening Week:")
         for fixture in data.get('data', []):
@@ -62,8 +63,10 @@ if response.status_code == 200:
                         #print(f"Player:{lineup['jersey_number']} {lineup['player']['display_name']} {lineup['player']['image_path']}")
                         #print(f"Player Rating : {playerstat['data']['value']}")
 
-                        playerInfo = f"Player:{lineup['player']['display_name']} Player Rating : {playerstat['data']['value']}"
+                        playerInfo = f"Player:{lineup['player']['display_name']} "
+                        playerStuff = f"Player Rating : {playerstat['data']['value']}"
                         playerList.append(playerInfo)
+                        playerRating.append(playerStuff)
 
 
 
@@ -74,16 +77,20 @@ if response.status_code == 200:
 else:
     print("Failed to retrieve data. Status code:", response.status_code)
 
-playerdata = pd.DataFrame(playerList)
-playerdata = pd.read_csv('playerlist.csv', delimiter=",")
+playerdata = pd.DataFrame({'Player Name':playerList, 'Player Rating':playerRating})
 playerdata.to_csv('playerlist.csv', index=False)
 
-#playerdata.columns = ['Player Name', 'Player Rating']
 
-#for i in range(len(playerdata) - 1):
- #   if playerdata.iloc[i]['score'] > playerdata.iloc[i + 1]['score']:
-  #      # Swap the two rows
-   #     playerdata.iloc[i], playerdata.iloc[i + 1] = playerdata.iloc[i + 1].copy(), playerdata.iloc[i].copy()
-#print(playerdata.columns)
 
-print(playerdata.shape)
+for i in range(len(playerdata)-1):
+    if playerdata.iloc[i]['Player Rating'] > playerdata.iloc[i + 1]['Player Rating']:
+        #Swap the two rows
+        placeholder = playerdata.iloc[i+1].copy()
+        playerdata.iloc[i+1] = playerdata.iloc[i]
+        playerdata.iloc[i] = placeholder
+
+    else:
+        placeholder = playerdata.iloc[i].copy()
+        playerdata.iloc[i] = playerdata.iloc[i+1]
+        playerdata.iloc[i+1] = placeholder
+
