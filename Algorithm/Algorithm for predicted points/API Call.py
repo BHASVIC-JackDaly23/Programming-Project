@@ -68,7 +68,19 @@ if response.status_code == 200:
                         playerInfo = f"Player:{lineup['player']['display_name']} "
                         playerScore = f"Player Rating : {playerstat['data']['value']}"
                         playerTeam = f"Team Name: {teamnamedata['data']['name']} "
-                        playerPosi = f"Position : {lineup['player']['position']}"
+                        playerPosi = f"Position : {lineup['player']['position_id']}"
+
+                        if playerPosi == 24:
+                            playerPosi = "Goalkeeper"
+
+                        elif playerPosi == 25:
+                            playerPosi = "Defender"
+
+                        elif playerPosi == 26:
+                            playerPosi = "Midfielder"
+
+                        elif playerPosi == 27:
+                            playerPosi = "Attacker"
 
                         playerList.append(playerInfo)
                         playerRating.append(playerScore)
