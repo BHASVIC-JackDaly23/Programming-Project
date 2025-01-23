@@ -10,7 +10,7 @@ base_url = "https://api.sportmonks.com/v3/football"
 endpoint = "/fixtures/between/2023-08-11/2023-08-17"
 
 filters = "fixtureLeagues:8;statisticTypes:118"
-include = "lineups.player:display_name,image_path;lineups.player.country:name,image_path;lineups.details;scores"
+include = "lineups.player:display_name,image_path;lineups.player.country:name,image_path;lineups.player:position;lineups.details;scores"
 
 endpoint_url = f"{base_url}{endpoint}?include={include}&filters={filters}"
 
@@ -37,6 +37,8 @@ if response.status_code == 200:
 
         playerList = []
         playerRating = []
+        playerClub = []
+        playerPosition = []
 
         print("Player Statistics for Premier League Opening Week:")
         for fixture in data.get('data', []):
@@ -64,9 +66,14 @@ if response.status_code == 200:
                         #print(f"Player Rating : {playerstat['data']['value']}")
 
                         playerInfo = f"Player:{lineup['player']['display_name']} "
-                        playerStuff = f"Player Rating : {playerstat['data']['value']}"
+                        playerScore = f"Player Rating : {playerstat['data']['value']}"
+                        playerTeam = f"Team Name: {teamnamedata['data']['name']} "
+                        playerPosi = f"Position : {lineup['player']['position']}"
+
                         playerList.append(playerInfo)
-                        playerRating.append(playerStuff)
+                        playerRating.append(playerScore)
+                        playerClub.append(playerTeam)
+                        playerPosition.append(playerPosi)
 
 
 
@@ -77,7 +84,7 @@ if response.status_code == 200:
 else:
     print("Failed to retrieve data. Status code:", response.status_code)
 
-playerdata = pd.DataFrame({'Player Name':playerList, 'Player Rating':playerRating})
+playerdata = pd.DataFrame({'Player Name':playerList, 'Player Rating':playerRating, 'Team Name':playerClub, 'Position':playerPosition})
 playerdata.to_csv('playerlist.csv', index=False)
 
 
