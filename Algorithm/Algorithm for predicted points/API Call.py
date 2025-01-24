@@ -65,10 +65,10 @@ if response.status_code == 200:
                         #print(f"Player:{lineup['jersey_number']} {lineup['player']['display_name']} {lineup['player']['image_path']}")
                         #print(f"Player Rating : {playerstat['data']['value']}")
 
-                        playerInfo = f"Player:{lineup['player']['display_name']} "
-                        playerScore = f"Player Rating : {playerstat['data']['value']}"
-                        playerTeam = f"Team Name: {teamnamedata['data']['name']} "
-                        playerPosi = f"Position : {lineup['player']['position_id']}"
+                        playerInfo = f"{lineup['player']['display_name']} "
+                        playerScore = playerstat['data']['value']
+                        playerTeam = f"{teamnamedata['data']['name']} "
+                        playerPosi =  lineup['player']['position_id']
 
                         if playerPosi == 24:
                             playerPosi = "Goalkeeper"
@@ -99,17 +99,22 @@ else:
 playerdata = pd.DataFrame({'Player Name':playerList, 'Player Rating':playerRating, 'Team Name':playerClub, 'Position':playerPosition})
 playerdata.to_csv('playerlist.csv', index=False)
 
+#player sorting
+
+playerdata= playerdata.sort_values(by=['Player Rating', 'Position'], ascending=[False, True])
+playerdata.to_csv('playerdata.csv', index=False)
 
 
-for i in range(len(playerdata)-1):
-    if playerdata.iloc[i]['Player Rating'] > playerdata.iloc[i + 1]['Player Rating']:
+
+#for i in range(len(playerdata)-1):
+    #if playerdata.iloc[i]['Player Rating'] > playerdata.iloc[i + 1]['Player Rating']:
         #Swap the two rows
-        placeholder = playerdata.iloc[i+1].copy()
-        playerdata.iloc[i+1] = playerdata.iloc[i]
-        playerdata.iloc[i] = placeholder
+        #placeholder = playerdata.iloc[i+1].copy()
+        #playerdata.iloc[i+1] = playerdata.iloc[i]
+        #playerdata.iloc[i] = placeholder
 
-    else:
-        placeholder = playerdata.iloc[i].copy()
-        playerdata.iloc[i] = playerdata.iloc[i+1]
-        playerdata.iloc[i+1] = placeholder
+    #else:
+        #placeholder = playerdata.iloc[i].copy()
+        #playerdata.iloc[i] = playerdata.iloc[i+1]
+        #playerdata.iloc[i+1] = placeholder
 
