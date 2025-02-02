@@ -4,10 +4,10 @@ import pandas as pd
 # Define your API key
 api_key = "6EY6z8qgu7RrGaHwQQbJc6qdTFxC3uJmqNutFDlHBEnceoDuaWwZLsVbwEla"
 
-matchdate = "2023-08-11/2023-08-17"
+matchdate = "2023-12-21/2023-12-24"
 # Define the API endpoint URL
 base_url = "https://api.sportmonks.com/v3/football"
-endpoint = "/fixtures/between/2023-08-11/2023-08-17"
+endpoint = (f'/fixtures/between/{matchdate}')
 
 filters = "fixtureLeagues:8;statisticTypes:118"
 include = "lineups.player:display_name,image_path;lineups.player.country:name,image_path;lineups.player:position;lineups.details;scores"
@@ -40,7 +40,7 @@ if response.status_code == 200:
         playerClub = []
         playerPosition = []
 
-        print("Player Statistics for Premier League Opening Week:")
+
         for fixture in data.get('data', []):
             print(f"\nFixture: {fixture['name']} (ID: {fixture['id']})")
             print(f"Date: {fixture['starting_at']}")
@@ -68,25 +68,34 @@ if response.status_code == 200:
                         playerInfo = f"{lineup['player']['display_name']} "
                         playerScore = playerstat['data']['value']
                         playerTeam = f"{teamnamedata['data']['name']} "
-                        playerPosi =  lineup['player']['position_id']
 
-                        if playerPosi == 24:
-                            playerPosi = "Goalkeeper"
+                        positionMap =  {24: "Goalkeeper", 25: "Defender", 26: "Midfielder", 27: "Attacker"}
 
-                        elif playerPosi == 25:
-                            playerPosi = "Defender"
 
-                        elif playerPosi == 26:
-                            playerPosi = "Midfielder"
+                        playerPosi = positionMap.get(lineup['player']['position_id'])
 
-                        elif playerPosi == 27:
-                            playerPosi = "Attacker"
 
                         playerList.append(playerInfo)
                         playerRating.append(playerScore)
                         playerClub.append(playerTeam)
                         playerPosition.append(playerPosi)
 
+        positionOrder = ["Goalkeeper", "Defender", "Midfielder", "Attacker"]
+
+        positionType = pd.CategoricalDtype(categories=positionOrder, ordered=True)
+
+        playerdata = pd.DataFrame({'Player Name': playerList, 'Player Rating': playerRating, 'Team Name': playerClub, 'Position': playerPosition})
+
+
+
+
+
+        # player sorting
+
+        playerdata = playerdata.sort_values(by=['Player Rating', 'Position'], ascending=[False, True])
+
+
+        playerdata.to_csv('gameweek18.csv', index=False)
 
 
 
@@ -96,13 +105,13 @@ if response.status_code == 200:
 else:
     print("Failed to retrieve data. Status code:", response.status_code)
 
-playerdata = pd.DataFrame({'Player Name':playerList, 'Player Rating':playerRating, 'Team Name':playerClub, 'Position':playerPosition})
-playerdata.to_csv('playerlist.csv', index=False)
+#playerdata = pd.DataFrame({'Player Name':playerList, 'Player Rating':playerRating, 'Team Name':playerClub, 'Position':playerPosition})
+#playerdata.to_csv('gameweek1.csv', index=False)
 
 #player sorting
 
-playerdata= playerdata.sort_values(by=['Player Rating', 'Position'], ascending=[False, True])
-playerdata.to_csv('playerdata.csv', index=False)
+#playerdata= playerdata.sort_values(by=['Player Rating', 'Position'], ascending=[False, False])
+#playerdata.to_csv('gameweek1.csv', index=False)
 
 
 

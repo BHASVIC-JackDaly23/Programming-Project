@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+
+        function showGameweek(week) {
+
+            document.getElementById("gameweek1").style.display = (week === 1) ? "block" : "none";
+            document.getElementById("gameweek2").style.display = (week === 2) ? "block" : "none";
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPL Player Stats</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Helvetica, sans-serif;
+        }
+        .fpl-table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #1E1E1E;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .fpl-table th, .fpl-table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #444;
+        }
+        .fpl-table th {
+            background-color: #27ae60;
+        }
+        .position-gk { background-color: #ffcc00; }
+        .position-def { background-color: #3498db; }
+        .position-mid { background-color: #9b59b6; }
+        .position-fwd { background-color: #e74c3c; }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center mt-4">Fantasy Premier League Player Stats</h1>
+    <div class="text-center">
+        <button onclick="showGameweek(1)">Gameweek 1</button>
+        <button onclick="showGameweek(2)">Gameweek 2</button>
+    </div>
+
+    <table class="table fpl-table" id="gameweek1">
+    <thead>
+        <tr>
+            <th>Player Name</th>
+            <th>Team</th>
+            <th>Position</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for player in week1 %}
+        <tr>
+            <td>{{ player['Player Name'] }}</td>
+            <td>{{ player['Team Name'] }}</td>
+            <td>{{ player['Position'] }}</td>
+            <td>{{ player['Player Rating'] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<table class="table fpl-table" id="gameweek2" style="display: none;">
+    <thead>
+        <tr>
+            <th>Player Name</th>
+            <th>Team</th>
+            <th>Position</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for player in week2 %}
+        <tr>
+            <td>{{ player['Player Name'] }}</td>
+            <td>{{ player['Team Name'] }}</td>
+            <td>{{ player['Position'] }}</td>
+            <td>{{ player['Player Rating'] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>
